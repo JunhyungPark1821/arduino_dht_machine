@@ -36,10 +36,10 @@ void loop() {
 
   //Relay conditions
   if ((int) humidity > 60) {  //If the humidity percentage is over 60%
-      digitalWrite (4,LOW); //Circuit is closed
+      digitalWrite (4,HIGH); //Circuit is closed
   }
   else {
-    digitalWrite (4, HIGH); //Circuit is open
+    digitalWrite (4, LOW); //Circuit is open
   }
   
   //LCD Display of temperature and humidity
